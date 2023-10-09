@@ -14,7 +14,7 @@ exports.calculateMode = (arr) => {
     
     for (let key in frequencyObj){
         if (maxValue === frequencyObj[key]){
-            if (isNaN(Number(key))){
+            if (isNaN(+key)){
                 mode.push(key)
             } else {
                 mode.push(+key)
